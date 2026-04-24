@@ -1,4 +1,10 @@
-# Serialised Error
+[![Tests](https://github.com/chaimleib/serialised-error/actions/workflows/npm-test.yml/badge.svg)](https://github.com/chaimleib/serialised-errors/actions/workflows/npm-test.yml)
+
+# chaimleib/serialised-error
+
+This is a fork of
+[postmanlabs/serialised-error](https://github.com/postmanlabs/serialised-error).
+It provides some security updates.
 
 This module attempts to convert an error object into a regular JavaScript object. This is useful if an error object has
 to be stored and operated upon.
