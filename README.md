@@ -1,5 +1,9 @@
 # Serialised Error
 
+This is a fork of
+[postmanlabs/serialised-error](https://github.com/postmanlabs/serialised-error).
+It provides some security updates.
+
 This module attempts to convert an error object into a regular JavaScript object. This is useful if an error object has
 to be stored and operated upon.
 
