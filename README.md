@@ -1,6 +1,6 @@
 [![Tests](https://github.com/chaimleib/serialised-error/actions/workflows/npm-test.yml/badge.svg)](https://github.com/chaimleib/serialised-errors/actions/workflows/npm-test.yml)
 
-# chaimleib/serialised-error
+# @chaimleib/serialised-error
 
 This is a fork of
 [postmanlabs/serialised-error](https://github.com/postmanlabs/serialised-error).
