@@ -4,7 +4,7 @@
   "description": "Serialises error object to normal object",
   "main": "index.js",
   "scripts": {
-    "test": "jshint index.js && node --test"
+    "test": "eslint && node --test"
   },
   "author": "Postman Labs <help@getpostman.com>",
   "license": "Apache-2.0",
@@ -23,10 +23,12 @@
     "json"
   ],
   "engines": {
-    "node": ">=18"
+    "node": "^20.19.0 || ^22.13.0 || >=24"
   },
   "devDependencies": {
-    "jshint": "^2.9.1"
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.2.1",
+    "globals": "^17.5.0"
   },
   "dependencies": {
     "object-hash": "^1.1.2",
