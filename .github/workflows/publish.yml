@@ -8,8 +8,11 @@ on:
     types: [created]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
+    environment:
+      name: deploy
+      deployment: false
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v6
@@ -19,8 +22,12 @@ jobs:
       - run: npm test
 
   publish-npm:
-    needs: build
+    needs: test
     runs-on: ubuntu-latest
+    environment:
+      name: deploy
+      deployment: false
+    concurrency: deploy
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v6
