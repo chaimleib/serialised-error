@@ -21,9 +21,11 @@ jobs:
       - run: npm ci
       - run: npm test
 
-  publish-npm:
+  release:
     needs: test
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
     environment:
       name: deploy
       deployment: false
