@@ -1,10 +1,9 @@
-var stacktrace = require('stack-trace'),
+const stacktrace = require('stack-trace'),
     hash = require('object-hash'),
-    uuid = require('uuid'),
-    SerialisedError;
+    uuid = require('uuid');
 
-SerialisedError = function (err, decorate) {
-    var now = new Date(); // to hold date here before any more time is lost
+function SerialisedError(err, decorate) {
+    const now = new Date(); // to hold date here before any more time is lost
 
     // If the function is called without the `new` operator, then we do it on behalf of the callee
 	if (!(this instanceof SerialisedError)) {

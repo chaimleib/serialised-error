@@ -1,4 +1,5 @@
 [![Tests](https://github.com/chaimleib/serialised-error/actions/workflows/npm-test.yml/badge.svg)](https://github.com/chaimleib/serialised-errors/actions/workflows/npm-test.yml)
+[![CodeQL](https://github.com/chaimleib/serialised-error/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/chaimleib/serialised-error/actions/workflows/github-code-scanning/codeql)
 
 # @chaimleib/serialised-error
 
