@@ -1,4 +1,4 @@
-name: NPM Test CI
+name: Tests
 
 permissions:
   contents: read
