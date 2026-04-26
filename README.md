@@ -10,16 +10,25 @@ It provides some security updates.
 This module attempts to convert an error object into a regular JavaScript object. This is useful if an error object has
 to be stored and operated upon.
 
+## Installation
+
+`@chaimleib/serialized-error` is a drop-in replacement for `serialised-error`.
+To avoid needing to change any of you import/require statements:
+
+```sh
+npm install serialised-error@npm:@chaimleib/serialised-error
+```
+
 ## Usage
 
 ```javascript
-var SerialisedError = require('serialised-error');
+const SerialisedError = require('serialised-error');
 
 // assuming you have an error
-var someError = new Error("This is a test error");
+const someError = new Error("This is a test error");
 
 // convert the error to object (new operator is optional)
-var serialisedError = new SerialisedError(someError);
+const serialisedError = new SerialisedError(someError);
 
 // convert the serialised error to JSON
 console.log(JSON.parse(serialisedError));
@@ -40,9 +49,3 @@ Passing a second argument as `true` to the `SerialisedError` constructor adds th
 | `timestampISO`  | the time (in ISO format) when the error was serialised |
 | `stacktrace`    | a prettified array of stack traces |
 
-
-## Installation
-
-```terminal
-npm install serialised-error;
-```
