@@ -13,7 +13,7 @@ to be stored and operated upon.
 ## Installation
 
 `@chaimleib/serialized-error` is a drop-in replacement for `serialised-error`.
-To avoid needing to change any of you import/require statements:
+To avoid needing to change any of your import/require statements:
 
 ```sh
 npm install serialised-error@npm:@chaimleib/serialised-error
